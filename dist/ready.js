@@ -1,5 +1,5 @@
-/*! @version domready 1.0.0 */
-window.domready =
+/*! @version domloaded 1.0.0 */
+window.domloaded =
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({

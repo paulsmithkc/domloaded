@@ -20,7 +20,7 @@ module.exports = (env) => {
       wasmLoading: false,
       path: path.resolve(__dirname, 'dist/'),
       filename: minimize ? '[name].min.js' : '[name].js',
-      library: 'domready',
+      library: 'domloaded',
       libraryTarget: 'window',
       libraryExport: 'default',
     },

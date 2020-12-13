@@ -1,5 +1,5 @@
 {
-  "name": "domready",
+  "name": "domloaded",
   "version": "1.0.0",
   "description": "This micro-library will allow you to easily delay code execution until the DOM is loaded.",
   "keywords": [
@@ -8,6 +8,9 @@
     "domready",
     "dom",
     "ready",
+    "loaded",
+    "document",
+    "readystate",
     "jquery"
   ],
   "main": "index.js",

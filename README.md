@@ -7,7 +7,7 @@ This micro-library will allow you to easily delay code execution until the DOM i
 It's easy. Works like this:
 
 ```
-domready(() => { /* dom is loaded... */ });
+domloaded(() => { /* dom is loaded... */ });
 ```
 
 ## Related
