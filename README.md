@@ -2,6 +2,26 @@
 
 This micro-library will allow you to easily delay code execution until the DOM is loaded.
 
+## Install w/ Express
+
+First install the npm package.
+
+```
+npm install domloaded
+```
+
+Then serve the built script files up.
+
+```
+app.use('/', express.static('node_modules/domloaded/dist'));
+```
+
+And finally link the script in your HTML/view.
+
+```
+<script src="/ready.min.js"></script>
+```
+
 ## Usage
 
 It's easy. Works like this:
