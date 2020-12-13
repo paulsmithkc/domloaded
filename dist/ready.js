@@ -10,10 +10,31 @@ self.domready =
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => /* binding */ domready
 /* harmony export */ });
-function domready() {
-  'use strict';
 
-  console.log('ready');
+
+var isReady = false;
+var fns = [];
+
+var emit = function emit() {
+  if (!isReady) {
+    isReady = true;
+
+    for (var i = 0; i < fns.length; ++i) {
+      fns[i].call(document);
+    }
+
+    fns = null;
+  }
+};
+
+self.addEventListener('DOMContentLoaded', emit);
+self.addEventListener('load', emit);
+function domready(fn) {
+  if (isReady) {
+    fn.call(document);
+  } else {
+    fns.push(fn);
+  }
 }
 
 /***/ })
