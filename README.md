@@ -1,4 +1,4 @@
-# domready
+# domloaded
 
 This micro-library will allow you to easily delay code execution until the DOM is loaded.
 
