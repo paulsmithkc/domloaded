@@ -1,7 +1,7 @@
 {
   "name": "domready",
   "version": "1.0.0",
-  "description": "modern domready",
+  "description": "This micro-library will allow you to easily delay code execution until the DOM is loaded.",
   "keywords": [
     "front-end",
     "micro-library",
