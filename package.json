@@ -1,0 +1,31 @@
+{
+  "name": "domready",
+  "version": "1.0.0",
+  "description": "jQuery's ready event extracted as a micro-library",
+  "keywords": [
+    "front-end",
+    "micro-library",
+    "domready",
+    "dom",
+    "ready",
+    "jquery"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack && webpack --env minimize"
+  },
+  "author": "Paul Smith",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulsmithkc/domready.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
