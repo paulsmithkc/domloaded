@@ -12,10 +12,10 @@ domready(() => { /* dom is loaded... */ });
 
 ## Related
 
-- [document.readyState](https://developer.mozilla.org/en-US/docs/Web/API/Document/readyState)
-- [readystatechange Event](https://developer.mozilla.org/en-US/docs/Web/API/Document/readystatechange_event)
-- [DOMContentLoaded Event](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event)
-- [load Event](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event)
+- [document.readyState property](https://developer.mozilla.org/en-US/docs/Web/API/Document/readyState)
+- [readystatechange event](https://developer.mozilla.org/en-US/docs/Web/API/Document/readystatechange_event)
+- [DOMContentLoaded event](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event)
+- [load event](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event)
 - [jQuery.ready() Guide](https://learn.jquery.com/using-jquery-core/document-ready/)
 - [jQuery.ready() API](https://api.jquery.com/ready/)
-- [domready](https://www.npmjs.com/package/domready)
+- [domready package](https://www.npmjs.com/package/domready)
