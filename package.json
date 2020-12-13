@@ -1,7 +1,7 @@
 {
   "name": "domready",
   "version": "1.0.0",
-  "description": "jQuery's ready event extracted as a micro-library",
+  "description": "modern domready",
   "keywords": [
     "front-end",
     "micro-library",

@@ -1,5 +1,5 @@
 /*! @version domready 1.0.0 */
-self.domready =
+window.domready =
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -8,7 +8,7 @@ self.domready =
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => /* binding */ domready
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 
 
@@ -27,15 +27,25 @@ var emit = function emit() {
   }
 };
 
-self.addEventListener('DOMContentLoaded', emit);
-self.addEventListener('load', emit);
-function domready(fn) {
+if (document.readyState !== 'loading') {
+  window.setTimeout(emit, 0);
+} else {
+  window.addEventListener('load', emit);
+  document.addEventListener('DOMContentLoaded', emit);
+  document.addEventListener('readystatechange', function () {
+    if (document.readyState !== 'loading') {
+      emit();
+    }
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function (fn) {
   if (isReady) {
     fn.call(document);
   } else {
     fns.push(fn);
   }
-}
+});
 
 /***/ })
 

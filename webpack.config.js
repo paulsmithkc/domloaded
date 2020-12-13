@@ -21,7 +21,7 @@ module.exports = (env) => {
       path: path.resolve(__dirname, 'dist/'),
       filename: minimize ? '[name].min.js' : '[name].js',
       library: 'domready',
-      libraryTarget: 'global',
+      libraryTarget: 'window',
       libraryExport: 'default',
     },
     module: {
