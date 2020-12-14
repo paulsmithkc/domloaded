@@ -13,13 +13,13 @@ npm install domloaded
 Then serve the built script files up.
 
 ```
-app.use('/', express.static('node_modules/domloaded/dist'));
+app.use('/domloaded', express.static('node_modules/domloaded/dist'));
 ```
 
 And finally link the script in your HTML/view.
 
 ```
-<script src="/ready.min.js"></script>
+<script src="/domloaded/ready.min.js"></script>
 ```
 
 ## Usage

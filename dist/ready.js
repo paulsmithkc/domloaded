@@ -1,4 +1,4 @@
-/*! @version domloaded 1.0.0 */
+/*! @version domloaded 1.0.1 */
 window.domloaded =
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
