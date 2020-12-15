@@ -1,4 +1,4 @@
-/*! @version domloaded 1.0.1 */
+/*! @version domloaded 1.0.2 */
 window.domloaded =
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
@@ -19,32 +19,17 @@ var emit = function emit() {
   if (!isReady) {
     isReady = true;
 
-    for (var i = 0; i < fns.length; ++i) {
-      fns[i].call(document);
-    }
+    for (var a = 0; a < fns.length; ++a) fns[a].call(document);
 
     fns = null;
   }
 };
 
-if (document.readyState !== 'loading') {
-  window.setTimeout(emit, 0);
-} else {
-  window.addEventListener('load', emit);
-  document.addEventListener('DOMContentLoaded', emit);
-  document.addEventListener('readystatechange', function () {
-    if (document.readyState !== 'loading') {
-      emit();
-    }
-  });
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function (fn) {
-  if (isReady) {
-    fn.call(document);
-  } else {
-    fns.push(fn);
-  }
+document.readyState === 'loading' ? (window.addEventListener('load', emit), document.addEventListener('DOMContentLoaded', emit), document.addEventListener('readystatechange', function () {
+  document.readyState !== 'loading' && emit();
+})) : window.setTimeout(emit, 0);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function (a) {
+  isReady ? a.call(document) : fns.push(a);
 });
 
 /***/ })

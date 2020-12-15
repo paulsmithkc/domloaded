@@ -4,9 +4,7 @@ const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = (env) => {
-  const package = JSON.parse(
-    fs.readFileSync(path.resolve(__dirname, './package.json'))
-  );
+  const package = JSON.parse(fs.readFileSync(path.resolve(__dirname, './package.json')));
   const banner = `@version ${package.name} ${package.version}`;
   const minimize = env ? env.minimize : false;
   console.log(banner);
@@ -30,7 +28,10 @@ module.exports = (env) => {
           include: [path.resolve(__dirname, 'src/')],
           test: /\.m?js$/i,
           loader: 'babel-loader',
-          options: { presets: ['@babel/preset-env'] },
+          options: {
+            presets: [['@babel/preset-env', { loose: true }]],
+            plugins: ['minify-simplify', 'minify-guarded-expressions', 'minify-mangle-names'],
+          },
         },
       ],
     },
