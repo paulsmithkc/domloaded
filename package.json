@@ -13,7 +13,7 @@
     "readystate",
     "jquery"
   ],
-  "main": "index.js",
+  "main": "src/ready.mjs",
   "scripts": {
     "build": "webpack && webpack --env minimize"
   },
