@@ -12,7 +12,7 @@ module.exports = (env) => {
   const webpackConfig = {
     mode: 'production',
     target: 'web',
-    entry: { ready: './src/ready.mjs' },
+    entry: { domloaded: './src/domloaded.js' },
     output: {
       chunkLoading: false,
       wasmLoading: false,

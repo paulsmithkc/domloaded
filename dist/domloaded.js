@@ -1,11 +1,11 @@
-/*! @version domloaded 1.0.2 */
+/*! @version domloaded 1.1.0 */
 window.domloaded =
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 717:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ 402:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
@@ -81,6 +81,6 @@ document.readyState === 'loading' ? (window.addEventListener('load', emit), docu
 /******/ 	// module exports must be returned from runtime so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(717);
+/******/ 	return __webpack_require__(402);
 /******/ })()
 .default;
