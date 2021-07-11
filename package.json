@@ -21,7 +21,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/paulsmithkc/domready.git"
+    "url": "https://github.com/paulsmithkc/domloaded.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.8",
