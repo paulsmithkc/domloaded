@@ -25,9 +25,9 @@ var emit = function emit() {
   }
 };
 
-document.readyState === 'loading' ? (window.addEventListener('load', emit), document.addEventListener('DOMContentLoaded', emit), document.addEventListener('readystatechange', function () {
-  document.readyState !== 'loading' && emit();
-})) : window.setTimeout(emit, 0);
+document.readyState && document.readyState !== 'loading' ? window.setTimeout(emit, 0) : (window.addEventListener('load', emit), document.addEventListener('DOMContentLoaded', emit), document.addEventListener('readystatechange', function () {
+  document.readyState && document.readyState !== 'loading' && emit();
+}));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function (a) {
   isReady ? a.call(document) : fns.push(a);
 });

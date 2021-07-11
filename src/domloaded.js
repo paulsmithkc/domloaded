@@ -13,13 +13,13 @@ const emit = () => {
   }
 };
 
-if (document.readyState !== 'loading') {
+if (document.readyState && document.readyState !== 'loading') {
   window.setTimeout(emit, 0);
 } else {
   window.addEventListener('load', emit);
   document.addEventListener('DOMContentLoaded', emit);
   document.addEventListener('readystatechange', () => {
-    if (document.readyState !== 'loading') {
+    if (document.readyState && document.readyState !== 'loading') {
       emit();
     }
   });
