@@ -2,11 +2,11 @@
 
 **This micro-library will allow you to easily delay code execution until the DOM is loaded.**
 
-* Unlike the [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event){:target="_blank"} event, this also works when included after the DOM was loaded.
+* Unlike the [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) event, this also works when included after the DOM was loaded.
 
-* This function is designed to work in the same was as jQuery's [.ready()](https://api.jquery.com/ready/){:target="_blank"} event. However, it has been broken off as micro-libary to enable usage without importing the entire jQuery library. This enables you to still use it in Vanilla JS and React.js contexts where needed.
+* This function is designed to work in the same was as jQuery's [.ready()](https://api.jquery.com/ready/) event. However, it has been broken off as micro-libary to enable usage without importing the entire jQuery library. This enables you to still use it in Vanilla JS and React.js contexts where needed.
 
-* Breaking this off into a micro-library allows you to execute code sooner and can be used to improve your [Google Lighthouse](https://developers.google.com/web/tools/lighthouse){:target="_blank"} scores.
+* Breaking this off into a micro-library allows you to execute code sooner and can be used to improve your [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) scores.
 
 ## Install
 Install the package with npm:
