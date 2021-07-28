@@ -1,6 +1,6 @@
 {
   "name": "domloaded",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This micro-library will allow you to easily delay code execution until the DOM is loaded.",
   "keywords": [
     "front-end",
