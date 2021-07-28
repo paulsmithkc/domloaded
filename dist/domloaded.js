@@ -1,4 +1,4 @@
-/*! @version domloaded 1.1.1 */
+/*! @version domloaded 1.1.2 */
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	// The require scope
